@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Webcam com Zoom, Pan e Rotação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Jean Webcam com Zoom, Pan e Rotação</h2>
+        <button id="theme-toggle">🌙 Tema Escuro</button>
+        </div>
+        <div class="video-container">
+            <video id="webcam" autoplay></video>
+            <canvas id="output"></canvas>
+        </div>
+        <div class="controls">
+            <label for="zoom">Zoom:</label><input type="range" id="zoom" min="1" max="5" step="0.1" value="1">
+
+            <label for="pan-x">Pan X:</label><input type="range" id="pan-x" min="-100" max="100" value="0">
+
+            <label for="pan-y">Pan Y:</label><input type="range" id="pan-y" min="-100" max="100" value="0">
+
+            <label for="rotation">Rotação:</label><input type="range" id="rotation" min="-180" max="180" value="0">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
